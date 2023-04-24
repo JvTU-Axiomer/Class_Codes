@@ -1,4 +1,4 @@
-#define _CRT_SECURE_NO_WARNINGS 1
+ï»¿#define _CRT_SECURE_NO_WARNINGS 1
 #include <iostream>
 #include <iostream>
 using namespace std;
@@ -8,8 +8,8 @@ int main()
 	int a = 6;
 	int b = a++;	//7
 	int c = ++a;	//8
-	cout << a << ' ' << a++ << endl;//ÏÈ¸³ÖµÔÙ×ÔÔö	9 8
-	cout << a << ' ' << ++a << endl;//ÏÈ×ÔÔöÔÙ¸³Öµ	10 10
+	cout << a << ' ' << a++ << endl;//å…ˆèµ‹å€¼å†è‡ªå¢ž	9 8
+	cout << a << ' ' << ++a << endl;//å…ˆè‡ªå¢žå†èµ‹å€¼	10 10
 	printf("%d\n", a++);	//10
 	printf("%d\n", ++a);	//12
 	printf("%d %d\n", a, a++);	//13 12
