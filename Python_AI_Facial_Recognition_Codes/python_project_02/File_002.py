@@ -26,3 +26,4 @@ print(type(f))
 g = 'abc123'
 h = '中国人'
 print(type(g))
+print(type(h))
