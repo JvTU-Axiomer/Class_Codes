@@ -1,16 +1,10 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include <cstdio>
 #include <iostream>
-
 using namespace std;
-
 int main()
 {
-	int i = 0;
-	int sum = 0;
-	while (i <= 100)
-	{
-		sum = sum + i * i * i;
-		i++;
-	}
-	cout << sum << endl;
+	int x = 0;
+	cout << scanf("%d", &x) << endl;
 	return 0;
 }
