@@ -3,6 +3,7 @@
 #include <string.h>
 int main()
 {
+	//²âÊÔÓÃÀı£º
 	char arr[] = "xxxxxxxxxx";
 	scanf("%s", arr);
 	return 0;
