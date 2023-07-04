@@ -1,22 +1,24 @@
 ﻿#define _CRT_SECURE_NO_WARNINGS 1
 #include <cstdio>
 #include <iostream>
-#include <string>
+#include <cstring>
 using namespace std;
+
 int main()
 {
-	//利用fgets()函数进行读入：
-	char arr[10];
-	fgets(arr, 8, stdin);
-	cout << arr << endl;
+	char str[31];
+	scanf("%s", str);
 
-	//清空缓冲区中的回车符号：
-	getchar();
+	char c;
+	//手动过滤掉缓冲区中的回车符.
+	scanf("\n%c", &c);
 
-	//利用getline()函数进行读入：
-	string str;
-	getline(cin, str);
-	cout << str << endl;
-
+	for (int i = 0; str[i]; i++)
+	{
+		if (str[i] == c)
+		{
+			str[i] = '#';
+		}
+	}
 	return 0;
 }
