@@ -1,23 +1,31 @@
-﻿#define _CRT_SECURE_NO_WARNINGS 1
-#include <stdio.h>
+﻿#include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
+#include <math.h>
 
 int main()
 {
-	int m = 0;
-	int n = 0;
-	scanf("%d %d", &m, &n);
-	//计算.
-	int k = (m > n ? m : n);
-	while (1)
+	int i = 0;
+	int count = 0;
+	for (i = 101; i <= 200; i += 2)
 	{
-		if (m % k == 0 && n % k == 0)
+		//判断i是否为素数：
+		int j = 0;
+		int flag = 1;	//假设i是素数.
+		for (j = 2; j <= sqrt(i); j++)
 		{
-			break;
+			if (i % j == 0)
+			{
+				flag = 0;
+				break;
+			}
 		}
-		k--;
+		if (flag == 1)
+		{
+			printf("%d ", i);
+			count++;
+		}
 	}
-	printf("%d和%d的最大公约数为：%d\n", m, n, k);
+	printf("\ncount = %d\n", count);
+
 	return 0;
 }
